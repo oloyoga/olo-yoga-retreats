@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* OLO Brand Colors - Light Mode */
+    /* Deep Olive Green #37381B as primary */
+    --background: 0.98 0.02 85;
+    --foreground: 0.22 0.04 85;
+
+    --card: 1 0 0;
+    --card-foreground: 0.22 0.04 85;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.22 0.04 85;
+
+    /* Deep Olive Green #37381B */
+    --primary: 0.22 0.04 85;
+    --primary-foreground: 0.98 0.02 85;
+
+    /* Soft Stone Beige #AEA38E */
+    --secondary: 0.7 0.03 75;
+    --secondary-foreground: 0.22 0.04 85;
+
+    /* Soft Stone Beige #AEA38E */
+    --muted: 0.7 0.03 75;
+    --muted-foreground: 0.45 0.04 85;
+
+    /* Dark Earth Brown #593B1F */
+    --accent: 0.35 0.08 50;
+    --accent-foreground: 0.98 0.02 85;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.98 0.02 85;
+
+    --border: 0.85 0.02 75;
+    --input: 0.85 0.02 75;
+    --ring: 0.22 0.04 85;
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    --sidebar: 0.98 0.02 85;
+    --sidebar-foreground: 0.22 0.04 85;
+    --sidebar-primary: 0.22 0.04 85;
+    --sidebar-primary-foreground: 0.98 0.02 85;
+    --sidebar-accent: 0.7 0.03 75;
+    --sidebar-accent-foreground: 0.22 0.04 85;
+    --sidebar-border: 0.85 0.02 75;
+    --sidebar-ring: 0.22 0.04 85;
+  }
+
+  .dark {
+    /* OLO Brand Colors - Dark Mode */
+    --background: 0.18 0.04 85;
+    --foreground: 0.98 0.02 85;
+
+    --card: 0.22 0.04 85;
+    --card-foreground: 0.98 0.02 85;
+
+    --popover: 0.25 0.04 85;
+    --popover-foreground: 0.98 0.02 85;
+
+    /* Deep Olive Green - lighter for dark mode */
+    --primary: 0.35 0.05 85;
+    --primary-foreground: 0.98 0.02 85;
+
+    /* Dark Earth Brown #593B1F */
+    --secondary: 0.35 0.08 50;
+    --secondary-foreground: 0.98 0.02 85;
+
+    --muted: 0.3 0.05 75;
+    --muted-foreground: 0.7 0.03 75;
+
+    /* Soft Stone Beige #AEA38E */
+    --accent: 0.7 0.03 75;
+    --accent-foreground: 0.22 0.04 85;
+
+    --destructive: 0.704 0.191 22.216;
+    --destructive-foreground: 0.98 0.02 85;
+
+    --border: 0.3 0.04 85;
+    --input: 0.3 0.04 85;
+    --ring: 0.5 0.04 85;
+
+    --chart-1: 0.488 0.243 264.376;
+    --chart-2: 0.696 0.17 162.48;
+    --chart-3: 0.769 0.188 70.08;
+    --chart-4: 0.627 0.265 303.9;
+    --chart-5: 0.645 0.246 16.439;
+
+    --sidebar: 0.22 0.04 85;
+    --sidebar-foreground: 0.98 0.02 85;
+    --sidebar-primary: 0.35 0.05 85;
+    --sidebar-primary-foreground: 0.98 0.02 85;
+    --sidebar-accent: 0.3 0.05 75;
+    --sidebar-accent-foreground: 0.98 0.02 85;
+    --sidebar-border: 0.3 0.04 85;
+    --sidebar-ring: 0.5 0.04 85;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Aileron", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .font-heading {
+    font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+  }
+}
